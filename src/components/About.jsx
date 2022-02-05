@@ -1,6 +1,6 @@
 const About = () => {
     return (
-        <div>About Page</div>
+        <div style={{ fontSize: '2rem' }}>About Page</div>
     );
 };
 
