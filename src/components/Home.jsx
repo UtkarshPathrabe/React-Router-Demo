@@ -1,6 +1,6 @@
 const Home = () => {
     return (
-        <div>Home Page</div>
+        <div style={{ fontSize: '2rem' }}>Home Page</div>
     );
 };
 
