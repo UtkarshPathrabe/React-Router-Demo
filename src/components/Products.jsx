@@ -2,7 +2,7 @@ import { Link, Outlet } from "react-router-dom";
 
 const Products = () => {
     return (
-        <>
+        <div style={{ margin: "1rem" }}>
             <div style={{ width: "100%", display: "flex", justifyContent: "center" }}>
                 <input type="search" placeholder="Search products" />
             </div>
@@ -11,7 +11,7 @@ const Products = () => {
                 <Link to="new">New</Link>
             </nav>
             <Outlet />
-        </>
+        </div>
     );
 };
 
