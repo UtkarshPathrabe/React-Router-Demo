@@ -1,7 +1,7 @@
 import { lazy, Suspense } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Admin from './components/Admin';
-import { AuthProvider } from './components/auth';
+import { AuthProvider } from './utilities/auth';
 import FeaturedProducts from './components/FeaturedProducts';
 import Home from './components/Home';
 import Login from './components/Login';
