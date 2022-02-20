@@ -4,11 +4,11 @@ const Users = () => {
     const [searchParams, setSearchParams] = useSearchParams();
     const showActiveUsers = searchParams.get('filter') === 'active';
     return (
-        <div>
-            <Link to='admin'><h2>Admin</h2></Link>
-            <Link to='1'><h2>User 1</h2></Link>
-            <Link to='2'><h2>User 2</h2></Link>
-            <Link to='3'><h2>User 3</h2></Link>
+        <div style={{ margin: "1rem" }}>
+            <nav style={{ margin: "0 0 1rem 0" }}>
+                <Link to='admin'>Admin</Link>
+                {Array.from({length: 10}, (_, i) => i + 1).map(i => (<Link key={i} to={`${i}`}>User {i}</Link>))}
+            </nav>
             <Outlet />
             <div>
                 <button onClick={() => setSearchParams({ filter: 'active' })}>Active Users</button>
