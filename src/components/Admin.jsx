@@ -1,6 +1,6 @@
 const Admin = () => {
     return (
-        <div>
+        <div style={{ width: "100%", margin: "1rem" }}>
             Admin User
         </div>
     );
